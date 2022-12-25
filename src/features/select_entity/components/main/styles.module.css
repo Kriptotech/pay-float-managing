@@ -1,0 +1,36 @@
+.select_entity {
+    margin: 0 auto;
+    min-height: 50vh;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    padding: 15px;
+    z-index: 1;
+    background-color: var(--white);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.select_entity h1 {
+    opacity: 0.8;
+    text-align: center;
+}
+
+.select_entity button {
+    margin-top: 20px;
+    padding: 15px 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--primary-light-yellow);
+    cursor: pointer;
+    color: #666;
+}
+
+.select_entity button:hover {
+    opacity: 0.8;
+}
+.select_entity button:active {
+    opacity: 0.4;
+}
