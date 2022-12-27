@@ -12,7 +12,7 @@ export function LoginContainer() {
         navigate("/dashboard");
     }
 
-    return ready ? (
+    return (
         <>
             <div className={style.login_container}>
                 <div
@@ -20,7 +20,7 @@ export function LoginContainer() {
                     data-aos="fade-left"
                 >
                     <form onSubmit={(e) => handleSubmit(e)}>
-                        <h1>Entre como {logAs}</h1>
+                        <h1>Entre na plataforma</h1>
                         <p>Faça login na plataforma interna</p>
                         <input
                             required
@@ -46,44 +46,7 @@ export function LoginContainer() {
                 </div>
             </div>
         </>
-    ) : (
-        <div className={style.select_login}>
-            <h1>LOGAR COMO?</h1>
-            <button
-                onClick={() => {
-                    setLogAs("Supervisor de operações");
-                    setReady(true);
-                }}
-            >
-                Supervisor de operações
-            </button>
-
-            <button
-                onClick={() => {
-                    setLogAs("Gerente financeiro");
-                    setReady(true);
-                }}
-            >
-                Gerente financeiro
-            </button>
-
-            <button
-                onClick={() => {
-                    setLogAs("Administrador");
-                    setReady(true);
-                }}
-            >
-                Administrador
-            </button>
-
-            <button
-                onClick={() => {
-                    setLogAs("Caixa/Funcionario");
-                    setReady(true);
-                }}
-            >
-                Funcionario
-            </button>
-        </div>
+    
+     
     );
 }
