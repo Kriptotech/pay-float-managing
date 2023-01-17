@@ -1,0 +1,28 @@
+.dashboard {
+    min-height: 100vh;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    z-index: 1;
+}
+
+.dashboard .selButton {
+    width: 100%;
+    padding: 0 5%;
+    height: 40px;
+}
+.dashboard .selButton button {
+    float: right;
+    height: 100%;
+    padding: 0 30px;
+    border: none;
+    background-color: var(--primary-light-yellow);
+    color: #666;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dashboard .selButton button:hover {
+    opacity: 0.8;
+}
+.dashboard .selButton button:active {
+    opacity: 0.2;
+}

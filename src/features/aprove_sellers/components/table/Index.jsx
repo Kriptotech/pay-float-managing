@@ -8,20 +8,20 @@ export function Table() {
     return (
         <div className={style.table}>
             <div className={style.table_container}>
-                <h3>Moedas que foram vendidas recentemente:</h3>
+                <h3>Aprovar pedido de se tornar vendedor:</h3>
 
                 <div className={style.dark_item_invisible}>
                     <dl className={style.dark_item}>
-                        <dt>Moeda</dt>
+                        <dt>Nome</dt>
                     </dl>
                     <dl className={style.dark_item}>
-                        <dt>Estado</dt>
+                        <dt>Telefone</dt>
                     </dl>
                     <dl className={style.dark_item}>
-                        <dt>Quantidade</dt>
+                        <dt>Email</dt>
                     </dl>
                     <dl className={style.dark_item}>
-                        <dt>Vendendo por</dt>
+                        <dt>Idade</dt>
                     </dl>
                 </div>
 
@@ -30,10 +30,10 @@ export function Table() {
                         <div>
                             <dl
                                 className={style.litgh_item}
-                                onClick={() => navigate("/coin_selled")}
+                                onClick={() => navigate("/aprove_seller")}
                                 style={{ cursor: "pointer" }}
                             >
-                                <dd>Dolar</dd>
+                                <dd>Alberto</dd>
                             </dl>
                             <dl
                                 style={{
@@ -41,23 +41,23 @@ export function Table() {
                                     cursor: "pointer",
                                 }}
                                 className={style.litgh_item}
-                                onClick={() => navigate("/coin_selled")}
+                                onClick={() => navigate("/aprove_seller")}
                             >
-                                <dd>Vendido</dd>
+                                <dd>388438843</dd>
                             </dl>
                             <dl
                                 className={style.litgh_item}
-                                onClick={() => navigate("/coin_selled")}
+                                onClick={() => navigate("/aprove_seller")}
                                 style={{ cursor: "pointer" }}
                             >
-                                <dd>1200</dd>
+                                <dd>endndn@gmail.com</dd>
                             </dl>
                             <dl
                                 className={style.litgh_item}
-                                onClick={() => navigate("/coin_selled")}
+                                onClick={() => navigate("/aprove_seller")}
                                 style={{ cursor: "pointer" }}
                             >
-                                <dd>3000MT</dd>
+                                <dd>112</dd>
                             </dl>
                         </div>
                     );

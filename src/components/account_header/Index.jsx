@@ -6,6 +6,7 @@ import {
     HouseLine,
     CurrencyCircleDollar,
     CurrencyDollar,
+    User,
 } from "phosphor-react";
 import { useState } from "react";
 
@@ -18,7 +19,7 @@ export function AccountHeader() {
         <header className={style.main_header}>
             <nav>
                 <div className={style.logo_container}>
-                    <a href="/dashboard">BINANCE</a>
+                    <a href="/dashboard">PayFloat</a>
                 </div>
 
                 {!sidebarVisible ? (
@@ -34,7 +35,7 @@ export function AccountHeader() {
                 {sidebarVisible && (
                     <div className={style.sidebar}>
                         <a href="/dashboard" className={style.sidebar_logo}>
-                            BINANCE
+                            PayFloat
                         </a>
 
                         <div className={style.sidebar_auth_links}>
@@ -42,13 +43,29 @@ export function AccountHeader() {
                                 <HouseLine />
                                 Dashboard
                             </a>
-                            <a href="/profile">
-                                <UserCirclePlus />
-                                Perfil
+                            <a href="/market">
+                                <CurrencyDollar />
+                                Mercado
+                            </a>
+                            <a href="/aprove_sellers">
+                                <User />
+                                Aprovar vendedor
+                            </a>
+                            <a href="/aproved_sells">
+                                <CurrencyCircleDollar />
+                                Vendas aprovadas
+                            </a>
+                            <a href="/unaproved_sells">
+                                <CurrencyCircleDollar />
+                                Vendas não aprovadas
                             </a>
                             <a href="/select_entity">
                                 <PlusCircle />
                                 Registrar entidade
+                            </a>
+                            <a href="/profile">
+                                <UserCirclePlus />
+                                Perfil
                             </a>
 
                             <button>

@@ -8,7 +8,7 @@ export function Table() {
     return (
         <div className={style.table}>
             <div className={style.table_container}>
-                <h3>Moedas que foram vendidas recentemente:</h3>
+                <h3>Vendas não aprovadas</h3>
 
                 <div className={style.dark_item_invisible}>
                     <dl className={style.dark_item}>
@@ -30,7 +30,7 @@ export function Table() {
                         <div>
                             <dl
                                 className={style.litgh_item}
-                                onClick={() => navigate("/coin_selled")}
+                                onClick={() => navigate("/unaproved_sell")}
                                 style={{ cursor: "pointer" }}
                             >
                                 <dd>Dolar</dd>
@@ -41,20 +41,20 @@ export function Table() {
                                     cursor: "pointer",
                                 }}
                                 className={style.litgh_item}
-                                onClick={() => navigate("/coin_selled")}
+                                onClick={() => navigate("/unaproved_sell")}
                             >
-                                <dd>Vendido</dd>
+                                <dd>Vendida</dd>
                             </dl>
                             <dl
                                 className={style.litgh_item}
-                                onClick={() => navigate("/coin_selled")}
+                                onClick={() => navigate("/unaproved_sell")}
                                 style={{ cursor: "pointer" }}
                             >
                                 <dd>1200</dd>
                             </dl>
                             <dl
                                 className={style.litgh_item}
-                                onClick={() => navigate("/coin_selled")}
+                                onClick={() => navigate("/unaproved_sell")}
                                 style={{ cursor: "pointer" }}
                             >
                                 <dd>3000MT</dd>
